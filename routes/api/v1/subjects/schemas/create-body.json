@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "$id": "schema:subject:create:body",
+    "required": [
+        "name"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "name": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 255
+          }
+    }
+}

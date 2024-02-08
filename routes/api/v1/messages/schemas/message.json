@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "$id": "schema:message",
+  "required": ["id"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "chat_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "user_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "user_first_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "create_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "update_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "content": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}

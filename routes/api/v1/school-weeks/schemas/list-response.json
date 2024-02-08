@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "$id": "schema:school-week:list:response",
+    "additionalProperties": false,
+    "properties": {
+      "data": {
+        "type": "array",
+        "items": {
+          "$ref": "schema:school-week"
+        }
+      },
+      "totalCount": {
+        "type": "integer"
+      }
+    }
+  }

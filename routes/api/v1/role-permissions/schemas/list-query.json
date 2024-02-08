@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "$id": "schema:role-permission:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "role_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "permission_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

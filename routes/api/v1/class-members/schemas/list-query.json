@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "$id": "schema:class-member:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "class_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "student_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

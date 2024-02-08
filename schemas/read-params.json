@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "$id": "schema:general:read:params",
+    "required": ["id"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "integer",
+        "minimum": 1
+      }
+    }
+  }

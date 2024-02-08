@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "$id": "schema:mark",
+  "required": [
+    "id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "student_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "lesson_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "mark": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "class_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "subject_id": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

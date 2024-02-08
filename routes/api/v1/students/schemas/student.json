@@ -1,0 +1,93 @@
+{
+    "type": "object",
+    "$id": "schema:student",
+    "required": [
+        "id"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "role_id": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "username": {
+            "type": "string",
+            "maxLength": 255,
+            "pattern": "^[a-zA-Z0-9_]{3,50}$"
+        },
+        "first_name": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "last_name": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "middle_name": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "birthday": {
+            "type": "string",
+            "format": "date"
+        },
+        "phone_number": {
+            "type": "string",
+            "maxLength": 12
+        },
+        "sex": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "address": {
+            "type": "string",
+            "maxLength": 255
+        },
+        "description": {
+            "type": "string",
+            "maxLength": 255
+        },
+        "student_class": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "teacher_id": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "nullable": true
+                },
+                "class_letter": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1
+                },
+                "class_number": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "teacher_first_name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "nullable": true
+                },
+                "teacher_last_name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "nullable": true
+                },
+                "teacher_middle_name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "nullable": true
+                }
+            }
+        }
+    }
+}

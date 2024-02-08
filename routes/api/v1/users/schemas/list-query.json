@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "$id": "schema:user:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "username": {
+      "type": "string",
+      "maxLength": 255,
+      "pattern": "^[a-zA-Z0-9_]{3,50}$"
+    },
+    "first_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "last_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "middle_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "search": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "role_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "from": {
+      "type": "integer"
+    },
+    "to": {
+      "type": "integer"
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "$id": "schema:general:create:response",
+    "required": ["id"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "integer"
+      }
+    }
+  }

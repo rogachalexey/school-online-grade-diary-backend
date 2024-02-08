@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "$id": "schema:school-year",
+  "required": ["id"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "start_school_year": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_school_year": {
+      "type": "string",
+      "format": "date"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}

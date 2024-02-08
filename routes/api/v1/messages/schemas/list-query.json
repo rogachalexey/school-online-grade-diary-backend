@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "$id": "schema:message:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "chat_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "user_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "content": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "from": {
+      "type": "integer"
+    },
+    "to": {
+      "type": "integer"
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

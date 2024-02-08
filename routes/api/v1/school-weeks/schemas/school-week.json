@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "$id": "schema:school-week",
+  "required": ["id"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "school_year_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "start_week": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_week": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

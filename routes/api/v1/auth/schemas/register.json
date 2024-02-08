@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "$id": "schema:auth:register",
+  "required": [
+    "username",
+    "password",
+    "first_name",
+    "last_name",
+    "middle_name",
+    "role_id",
+    "birthday",
+    "sex",
+    "address",
+    "phone_number"
+  ],
+  "properties": {
+    "username": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]{3,50}$",
+      "maxLength": 50
+    },
+    "password": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "role_id": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone_number":{
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "$id": "schema:school-year:list:response",
+  "additionalProperties": false,
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "$ref": "schema:school-year"
+      }
+    },
+    "totalCount": {
+      "type": "integer"
+    }
+  }
+}

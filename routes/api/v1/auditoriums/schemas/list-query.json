@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "$id": "schema:auditorium:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "auditorium_number": {
+      "type": "integer"
+    },
+    "teacher_id": {
+      "type": "integer"
+    },
+    "from": {
+      "type": "integer"
+    },
+    "to": {
+      "type": "integer"
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "$id": "schema:chat",
+  "required": ["id"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "teacher_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "class_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "subject_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "teacher_first_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "teacher_last_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "teacher_middle_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "class_letter": {
+      "type": "string",
+      "maxLength": 50,
+      "minLength": 50
+    },
+    "class_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "subject_name": {
+      "type": "string",
+      "maxLength": 50
+    }
+  }
+}

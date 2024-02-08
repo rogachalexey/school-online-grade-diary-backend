@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "$id": "schema:subject",
+  "required": ["id"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}

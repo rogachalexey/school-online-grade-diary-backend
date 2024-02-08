@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "$id": "schema:role-permission:create:body",
+    "required": [
+        "role_id",
+        "permission_id"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "role_id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "permission_id": {
+            "type": "integer",
+            "minimum": 1
+          }
+    }
+}

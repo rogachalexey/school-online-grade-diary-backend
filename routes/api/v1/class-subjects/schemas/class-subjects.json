@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "$id": "schema:class-subjects",
+  "additionalProperties": false,
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "class_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "subject_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "teacher_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "school_year_id": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

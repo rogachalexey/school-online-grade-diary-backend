@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "$id": "schema:dotenv",
+    "required": [
+        "POSTGRESQL_URL"
+    ],
+    "properties": {
+        "NODE_ENV": {
+            "type": "string",
+            "default": "development"
+        },
+        "PORT": {
+            "type": "integer",
+            "default": 3000
+        },
+        "POSTGRESQL_URL": {
+            "type": "string"
+        },
+        "JWT_SECRET": {
+            "type": "string"
+        },
+        "JWT_EXPIRE_IN": {
+            "type": "string",
+            "default": "1h"
+        }
+    }
+}

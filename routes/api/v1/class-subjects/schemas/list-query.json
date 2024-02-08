@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "$id": "schema:class-subjects:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "auditorium_number": {
+      "type": "integer"
+    },
+    "teacher_id": {
+      "type": "integer"
+    },
+    "class_id": {
+      "type": "integer"
+    },
+    "school_year_id": {
+      "type": "integer"
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

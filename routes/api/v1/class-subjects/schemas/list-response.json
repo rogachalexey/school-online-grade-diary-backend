@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "$id": "schema:class-subjects:list:response",
+    "additionalProperties": false,
+    "properties": {
+      "data": {
+        "type": "array",
+        "items": {
+          "$ref": "schema:class-subjects"
+        }
+      },
+      "totalCount": {
+        "type": "integer"
+      }
+    }
+  }

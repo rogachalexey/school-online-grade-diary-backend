@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "$id": "schema:class",
+  "required": ["id"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "teacher_id": {
+      "type": "integer",
+      "minimum": 1,
+      "nullable": true
+    },
+    "class_letter": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1
+    },
+    "class_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "teacher_first_name": {
+      "type": "string",
+      "minLength": 1,
+      "nullable": true
+    },
+    "teacher_last_name": {
+      "type": "string",
+      "minLength": 1,
+      "nullable": true
+    },
+    "teacher_middle_name": {
+      "type": "string",
+      "minLength": 1,
+      "nullable": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "$id": "schema:auditorium:list:response",
+    "additionalProperties": false,
+    "properties": {
+      "data": {
+        "type": "array",
+        "items": {
+          "$ref": "schema:auditorium"
+        }
+      },
+      "totalCount": {
+        "type": "integer"
+      }
+    }
+  }

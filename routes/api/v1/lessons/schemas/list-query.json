@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "$id": "schema:lesson:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "class_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "auditorium_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "teacher_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "subject_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "time": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+
+    },
+    "day": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7
+    },
+    "school_week_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "homework": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "from": {
+      "type": "integer"
+    },
+    "to": {
+      "type": "integer"
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "$id": "schema:schedule:list:response",
+    "additionalProperties": false,
+    "properties": {
+      "data": {
+        "type": "array",
+        "items": {
+          "$ref": "schema:schedule"
+        }
+      },
+      "currentDay": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 8
+      },
+      "currentWeekId": {
+        "type": "integer",
+        "minimum": 1
+      }
+    }
+  }

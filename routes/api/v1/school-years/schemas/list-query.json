@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "$id": "schema:school-year:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "from": {
+      "type": "integer"
+    },
+    "to": {
+      "type": "integer"
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "$id": "schema:user",
+  "required": ["id"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "username": {
+      "type": "string",
+      "maxLength": 50,
+      "pattern": "^[a-zA-Z0-9_]{3,50}$"
+    },
+    "first_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "last_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "middle_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "role_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "birthday": {
+      "type": "string",
+      "format": "date"
+    },
+    "phone_number": {
+      "type": "string",
+      "maxLength": 12
+    },
+    "sex": {
+      "type": "string",
+      "maxLength": 10
+    },
+    "address": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}

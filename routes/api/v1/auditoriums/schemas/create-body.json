@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "$id": "schema:auditorium:create:body",
+    "required": [
+        "auditorium_number",
+        "teacher_id"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "auditorium_number": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "teacher_id": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "description": {
+            "type": "string",
+            "maxLength": 255
+        }
+    }
+}

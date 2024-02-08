@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "$id": "schema:mark:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "student_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "lesson_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "subject_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "class_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "mark": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 10
+    },
+    "from": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 10
+    },
+    "to": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 10
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

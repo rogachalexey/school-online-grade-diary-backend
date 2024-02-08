@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "$id": "schema:class:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "class_letter": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1
+    },
+    "teacher_id": {
+      "type": "integer"
+    },
+    "class_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "from": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "to": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}

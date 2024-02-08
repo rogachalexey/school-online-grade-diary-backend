@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "$id": "schema:class-subjects:create:body",
+  "required": [
+    "class_id",
+    "student_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "class_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "student_id": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

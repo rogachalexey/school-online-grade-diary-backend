@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "$id": "schema:student:list:query",
+  "additionalProperties": false,
+  "properties": {
+    "username": {
+      "type": "string",
+      "maxLength": 50,
+      "pattern": "^[a-zA-Z0-9_]{3,50}$"
+    },
+    "first_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "last_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "middle_name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "search": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "class_id": {
+      "type": "integer",
+      "nullable": true
+    },
+    "auditorium_id": {
+      "type": "integer",
+      "nullable": true
+    },
+    "limit": {
+      "$ref": "schema:limit#/properties/limit"
+    },
+    "skip": {
+      "$ref": "schema:skip#/properties/skip"
+    }
+  }
+}
